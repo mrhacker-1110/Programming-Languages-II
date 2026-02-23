@@ -1,0 +1,53 @@
+.plan-modal {
+    max-width: 600px;
+  }
+  
+  .plan-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+    transition: all 0.3s;
+  }
+  
+  .plan-form textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  }
+  
+  .icon-selector {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .icon-option {
+    padding: 0.8rem;
+    font-size: 2rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .icon-option:hover {
+    border-color: #667eea;
+    transform: scale(1.1);
+  }
+  
+  .icon-option.selected {
+    border-color: #667eea;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 600px) {
+    .icon-selector {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }

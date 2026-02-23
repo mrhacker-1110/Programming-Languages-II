@@ -1,0 +1,94 @@
+.plan-detail-section {
+    min-height: calc(100vh - 80px);
+    background: white;
+    padding: 2rem 0;
+  }
+  
+  .plan-icon-large {
+    font-size: 5rem;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .schedule-section {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 16px;
+  }
+  
+  .schedule-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .schedule-day {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s;
+  }
+  
+  .schedule-day:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .day-number {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 auto 1rem;
+  }
+  
+  .schedule-day h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0.5rem 0;
+  }
+  
+  .schedule-day p {
+    color: #666;
+    margin: 0.5rem 0;
+  }
+  
+  .duration {
+    display: inline-block;
+    background: #fff3cd;
+    color: #856404;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .schedule-grid {
+      grid-template-columns: 1fr;
+    }
+  }
